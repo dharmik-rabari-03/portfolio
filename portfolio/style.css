@@ -1,0 +1,541 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+.nav-link:hover {
+  color: #1761aa !important;
+  transition: all 0.3s;
+}
+
+.navbar-brand:hover {
+  color: #d3f054 !important;
+  transition: all 0.3s;
+}
+
+.img img {
+  width: 30rem;
+  height: 30rem;
+}
+
+
+.carousel-inner,
+.carousel-item,
+.card {
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border-radius: 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+
+}
+
+.card-body {
+  flex-grow: 1;
+
+}
+
+
+
+.section {
+  
+  background: linear-gradient(277deg, rgba(87, 199, 122, 1) 50%, rgba(83, 206, 237, 0.98) 100%);
+}
+
+#footer {
+  background: linear-gradient(277deg, rgba(87, 199, 122, 1) 50%, rgba(83, 206, 237, 0.98) 100%);
+}
+
+.char2 img {
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.char2 img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.h-line {
+  background: linear-gradient(277deg, rgba(87, 199, 122, 1) 50%, rgba(83, 206, 237, 0.98) 100%);
+  width: 70px;
+  height: 15px;
+  border-radius: 50px;
+}
+
+.main-mt {
+  margin-top: 100px;
+}
+
+
+/* From Uiverse.io by cssbuttons-io */
+.btn1 {
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.9s;
+}
+
+.btn1:active,
+.btn1:hover {
+  outline: 0;
+}
+
+.btn1 span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+
+}
+
+.btn1:hover:hover span {
+  background: none;
+}
+
+.btn1:active {
+  transform: scale(0.9);
+}
+
+
+
+
+
+.man-work {
+  background-color: #ffff;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.man-work:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.man-work img {
+  border-radius: 10px;
+  border: 5px solid #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.man-work img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.f1 {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  object-fit: cover;
+}
+
+
+.list-group-item.active {
+  background-color: #343a40;
+  border-color: #343a40;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+.list-group-item:hover {
+  background-color: #1761aa;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+
+/* Footer */
+.footer {
+  background-color: #1e1e1e;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin-bottom: 0px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer h3 {
+  margin-bottom: 15px;
+}
+
+.footer-contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+}
+
+.footer-contact input,
+.footer-contact textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.footer-contact button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.footer-contact button:hover {
+  background-color: #0056b3;
+}
+
+.footer-social .social-icons {
+  display: flex;
+  gap: 15px;
+  font-size: 20px;
+}
+
+.footer-social a {
+  color: #bbb;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #fff;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-contact,
+  .footer-social,
+  .footer-links {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+
+.instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+
+
+.linkedin {
+  color: #0A66C2;
+}
+
+.fa-github {
+  color: #181717;
+}
+
+.whatsaap {
+  color: #00ff5e;
+}
+
+.ftr-text ul li a {
+  color: gray;
+}
+
+.ftr-text2 {
+  color: rgb(80, 79, 79);
+}
+
+.cf-1 {
+ background: linear-gradient(277deg, rgba(87, 199, 122, 1) 50%, rgba(83, 206, 237, 0.98) 100%);
+}
+
+
+
+
+
+
+
+
+ 
+
+    /* === Wave Styling === */
+    .wave-svg {
+      display: block;
+      margin-bottom: -2px;
+     
+    }
+
+    .wave-path {
+      fill: var(--wave-color);
+    }
+
+    /* === Light/Dark Mode Variables === */
+    :root {
+      --wave-color: #ffffff;
+      --journey-bg: #f8f9fa;
+    }
+
+    [data-bs-theme="dark"] {
+      --wave-color: #212529;
+      --journey-bg: #000000;
+   }
+
+
+
+
+   /* Dark theme styles for the whole section */
+[data-bs-theme="dark"] #my-journey-section {
+  background-color: #212529 !important;  /* Dark background */
+  color: #ffffff !important;             /* White text */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Make sure all child elements inside the section get white text */
+[data-bs-theme="dark"] #my-journey-section * {
+  color: #ffffff !important;
+}
+
+
+[data-bs-theme="dark"] #my-journey-section .man-work {
+  background-color: transparent !important; /* or a darker shade */
+}
+
+
+.section {
+  background: linear-gradient(277deg, rgba(87, 199, 122, 1) 50%, rgba(83, 206, 237, 0.98) 100%);
+}
+
+#footer {
+  background: linear-gradient(277deg, rgba(87, 199, 122, 1) 50%, rgba(83, 206, 237, 0.98) 100%);
+}
+
+/* Dark theme backgrounds */
+[data-bs-theme="dark"] .section {
+background: linear-gradient(277deg, #0f2027 50%, #203a43 75%, #2c5364 100%);
+
+
+}
+
+[data-bs-theme="dark"] .cf-1 {
+background: linear-gradient(277deg, #0f2027 50%, #203a43 75%, #2c5364 100%);
+ 
+}
+
+
+
+    
+
+
+
+/* From Uiverse.io by Praashoo7 */ 
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.up {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.down {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.card1 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 90px 5px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.instagram {
+  margin-top: 1.5em;
+  margin-left: 1.2em;
+  fill: #cc39a4;
+}
+
+.card2 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 90px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.twitter {
+  margin-top: 1.5em;
+  margin-left: -.9em;
+  fill: #03A9F4;
+}
+
+.card3 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 5px 90px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.github {
+  margin-top: -.6em;
+  margin-left: 1.2em;
+}
+
+.card4 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 90px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.discord {
+  margin-top: -.9em;
+  margin-left: -1.2em;
+  fill: #8c9eff;
+}
+
+.card1:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #cc39a4;
+}
+
+.card1:hover .instagram {
+  fill: white;
+}
+
+.card2:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #03A9F4;
+}
+
+.card2:hover .linkedin {
+  fill: white;
+}
+
+.card3:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: black;
+}
+
+.card3:hover .github {
+  fill: white;
+}
+
+.card4:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #5eff00;
+}
+
+.card4:hover .whatsapp {
+  fill: white;
+}
