@@ -57,9 +57,29 @@
 
               <!-- From Uiverse.io by cssbuttons-io -->
 
-              <a href="#project" class="text-decoration-none "><button class="btn1  mx-auto">
-                  <span class="text" data-aos="zoom-in" data-aos-duration="2500">View My Project</span>
-                </button></a>
+              <a href="#projects" class="text-decoration-none">
+
+                <button class="btn1 mx-auto">
+
+                  <span class="text" data-aos="zoom-in" data-aos-duration="2500">
+                    View My Project
+                  </span>
+
+                </button>
+
+              </a>
+
+              <div class="mt-4 text-center">
+
+                <a href="my-resume.pdf" download class="btn btn-success me-2">
+                  Download Resume
+                </a>
+
+                <a href="#contact" class="btn btn-warning">
+                  Hire Me
+                </a>
+
+              </div>
 
 
 
@@ -525,23 +545,42 @@
 
           <div class="row ">
             <div class="col-lg-4" data-aos="fade-right" data-aos-duration="2000">
-              <form>
+              <form id="contact-form">
+
                 <div class="mt-3">
-                  <label for="name" class="form-label">Name</label>
-                  <input type="text" placeholder="enter your name" class="form-control" required>
+
+                  <label for="name" class="form-label">
+                    Name
+                  </label>
+
+                  <input type="text" id="name" placeholder="enter your name" class="form-control" required>
+
                 </div>
 
                 <div class="mt-3">
-                  <label for="name" class="form-label">Email</label>
-                  <input type="email" placeholder="enter your email" class="form-control" required>
+
+                  <label for="email" class="form-label">
+                    Email
+                  </label>
+
+                  <input type="email" id="email" placeholder="enter your email" class="form-control" required>
+
                 </div>
 
                 <div class="mt-3">
-                  <label for="message" class="form-label">Message</label>
-                  <textarea class="form-control" required placeholder="Enter your message" rows="5"></textarea>
-                </div>
-                <button class="btn btn-primary mt-3">Submit</button>
 
+                  <label for="message" class="form-label">
+                    Message
+                  </label>
+
+                  <textarea id="message" class="form-control" required placeholder="Enter your message"
+                    rows="5"></textarea>
+
+                </div>
+
+                <button class="btn btn-primary mt-3">
+                  Submit
+                </button>
 
               </form>
             </div>
@@ -557,7 +596,7 @@
               <p><a href="tel:+91 9624908290" class="text-decoration-none text-white">+91 7573068252</a></p>
 
               <h5>Email</h5>
-              <p><a href="dharmik161616@gmail.com" class="text-decoration-none ">dharmik161616@gmail.com</a>
+              <p><a href="mailto:dharmik161616@gmail.com" class="text-decoration-none ">dharmik161616@gmail.com</a>
               </p>
 
 
@@ -565,7 +604,7 @@
             </div>
             <div class="col-lg-4">
               <h5 class="mt-5 mb-3 ms-5">Follow Us</h5>
-            
+
               <!-- From Uiverse.io by Praashoo7 -->
               <div class="main">
                 <div class="up">
@@ -618,8 +657,9 @@
                     </a>
                   </button>
                   <button class="card4">
-                    <a href="">
-                      <img src="img/whatsapp-svgrepo-com.svg" alt="" width="35px " height="35px" class="me-2 mb-2 whatsapp">
+                    <a href="https://wa.me/917573068252" target="_blank">
+                      <img src="img/whatsapp-svgrepo-com.svg" alt="" width="35px " height="35px"
+                        class="me-2 mb-2 whatsapp">
                     </a>
                   </button>
                 </div>
@@ -656,24 +696,9 @@
   </script>
 
 
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-
-  <script>
-    const toggleBtn = document.getElementById("themeToggle");
-    const html = document.documentElement;
-
-    toggleBtn.addEventListener("click", () => {
-      const currentTheme = html.getAttribute("data-bs-theme");
-      const newTheme = currentTheme === "dark" ? "light" : "dark";
-      html.setAttribute("data-bs-theme", newTheme);
-
-      // Optional: Change icon
-      const icon = toggleBtn.querySelector("i");
-      icon.classList.toggle("fa-moon");
-      icon.classList.toggle("fa-sun");
-    });
-  </script>
-
+<script src="script.js"></script>
 
 </body>
 

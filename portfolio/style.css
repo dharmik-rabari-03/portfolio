@@ -5,7 +5,9 @@
   font-family: 'Poppins', sans-serif;
 }
 
-
+html{
+    scroll-behavior: smooth;
+}
 
 .nav-link:hover {
   color: #1761aa !important;
