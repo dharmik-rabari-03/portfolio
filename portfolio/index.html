@@ -1,789 +1,760 @@
 <!doctype html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>portfolio</title>
+  <title>Dharmik Ragiya | Full Stack Web Developer</title>
+  <meta name="description" content="Full Stack Web Developer portfolio by Dharmik Ragiya — BCA student, passionate about building scalable web apps with Node.js, Express.js, MongoDB, JavaScript, TypeScript.">
+  <meta name="keywords" content="Dharmik Ragiya, Full Stack Developer, Web Developer, Portfolio, BCA, Node.js, Express.js, MongoDB, JavaScript, TypeScript">
+  <meta name="author" content="Dharmik Ragiya">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="style.css">
-
-  <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Fugaz+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;450;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-lg bg-dark fixed-top">
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-      <a class="navbar-brand text-white" href="#">Dharmik</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="#home">Dharmik<span>.</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav ms-auto ">
-          <a class="nav-link active text-white" aria-current="page" href="#home">HOME</a>
-          <a class="nav-link active text-white" aria-current="page" href="#about">ABOUT</a>
-          <a class="nav-link active text-white" aria-current="page" href="#service">SERVICE</a>
-          <a class="nav-link active text-white" aria-current="page" href="#skills">SKILLS</a>
-          <a class="nav-link active text-white" aria-current="page" href="#projects">PORTFOLIO</a>
-          <a class="nav-link active text-white" aria-current="page" href="#contact">CONTACT ME</a>
-
-          <button id="themeToggle" class="btn btn-primary toggle-btn">
-            <i class="fas fa-moon"></i> Toggle Dark Mode
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar-nav ms-auto align-items-lg-center">
+          <a class="nav-link active" href="#home">Home</a>
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#skills">Skills</a>
+          <a class="nav-link" href="#services">Services</a>
+          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="#contact">Contact</a>
+          <a href="my-resume.pdf" download class="nav-resume-btn">
+            <i class="fas fa-download"></i> Resume
+          </a>
+          <button class="toggle-btn" id="themeToggle" aria-label="Toggle theme">
+            <i class="fas fa-moon"></i>
           </button>
-
-
         </div>
       </div>
     </div>
   </nav>
-  <main>
-    <section class="section ">
-      <div class="container " id="home">
-        <div class="row ">
-          <div class="col-lg-6 col-md-12 col-sm-12  text-center text-lg-start mt-5  " data-aos="fade-right"
-            data-aos-duration="2000">
-            <div>
-              <p class="mb-4 main-mt text-center"> Hello I'm </p>
-              <h1 class="mb-4 text-center">Dharmik Ragiya</h1>
-              <hr>
-              <p class="text-center">full stack web developer</p>
-              <hr>
 
-              <!-- From Uiverse.io by cssbuttons-io -->
+  <!-- ===== HERO ===== -->
+  <section class="section-hero" id="home">
+    <div class="container">
+      <div class="hero-content" data-aos="fade-up" data-aos-duration="800">
+        <div class="hero-left">
+          <p class="hero-greeting">Hello, I'm</p>
+          <h1 class="hero-name"><span>Dharmik Ragiya</span></h1>
+          <div class="hero-role-wrapper">
+            <span class="hero-role">I build</span>
+            <span class="hero-role-text" id="typed-text">Full Stack Applications</span>
+          </div>
+          <p class="hero-description">
+            A passionate Full Stack Web Developer focused on building scalable, performant web applications.
+            I specialize in crafting responsive frontends with HTML, CSS, JavaScript &amp; TypeScript, and
+            architecting robust backends with Node.js, Express.js &amp; MongoDB. I care deeply about clean code,
+            great user experiences, and continuous learning.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn-premium btn-premium-primary">
+              <i class="fas fa-eye"></i> View Projects
+            </a>
+            <a href="my-resume.pdf" download class="btn-premium btn-premium-outline">
+              <i class="fas fa-download"></i> Resume
+            </a>
+            <a href="#contact" class="btn-premium btn-premium-outline">
+              <i class="fas fa-envelope"></i> Hire Me
+            </a>
+          </div>
+          <div class="hero-social">
+            <a href="https://github.com/dharmik-rabari-03" target="_blank" class="hero-social-link" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/dharmik-ragiya/" target="_blank" class="hero-social-link" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:dharmik161616@gmail.com" class="hero-social-link" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://www.instagram.com/dharmik_rabari_03/" target="_blank" class="hero-social-link" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="hero-image-wrapper">
+            <div class="hero-image-glow"></div>
+            <img src="img/2unnamed.jpg" alt="Dharmik Ragiya">
+            <div class="floating-icon"><i class="fab fa-js"></i></div>
+            <div class="floating-icon"><i class="fab fa-node-js"></i></div>
+            <div class="floating-icon"><i class="fas fa-database"></i></div>
+            <div class="floating-icon"><i class="fab fa-bootstrap"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-              <a href="#projects" class="text-decoration-none">
+  <!-- ===== STATS ===== -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid" data-aos="fade-up" data-aos-duration="700">
+        <div class="stat-card">
+          <div class="stat-value"><span class="counter" data-target="7">0</span>+</div>
+          <div class="stat-label">Projects Completed</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value"><span class="counter" data-target="2">0</span>x</div>
+          <div class="stat-label">Hackathon Winner</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value"><span class="counter" data-target="15">0</span>+</div>
+          <div class="stat-label">Technologies Learned</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value"><span class="counter" data-target="2024">0</span></div>
+          <div class="stat-label">Learning Journey Started</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-                <button class="btn1 mx-auto">
+  <!-- ===== ABOUT ===== -->
+  <section class="about-section section-alt" id="about">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up" data-aos-duration="600">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">A developer who loves building</p>
+      </div>
+      <div class="about-grid" data-aos="fade-up" data-aos-duration="700">
+        <div class="about-image-wrapper">
+          <img src="img/man-working-laptop-from-office_1108340-892.jpg" alt="Dharmik coding" loading="lazy">
+        </div>
+        <div class="about-text">
+          <p>Hey there! I'm <strong>Dharmik Ragiya</strong>, a passionate <strong>Full Stack Web Developer</strong> currently pursuing my <strong>Bachelor of Computer Applications (BCA)</strong>. My journey into web development started with pure curiosity — I wanted to understand how websites actually work, and that curiosity quickly turned into a full-blown passion for building things on the web.</p>
+          <p>I specialize in creating responsive, accessible interfaces using <strong>HTML5, CSS3, JavaScript, TypeScript, and Bootstrap</strong>. On the backend, I build scalable REST APIs and server-side applications with <strong>Node.js, Express.js, and MongoDB</strong>, including JWT-based authentication and database modeling with Mongoose. I use <strong>Git &amp; GitHub</strong> for version control and tools like Postman for API testing.</p>
+          <p>Every project I've built — from e-commerce platforms to weather applications — has taught me something valuable about architecture, problem-solving, and the importance of good design. I genuinely enjoy turning ideas into working software and seeing them come to life on the web.</p>
+          <p>When I'm not coding, I'm exploring new technologies, contributing to open source, or finding ways to improve my workflow. My goal is to join a top engineering team where I can solve challenging problems and build products that make a real difference.</p>
+        </div>
+      </div>
+      <div class="feature-grid" data-aos="fade-up" data-aos-duration="800">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-brain"></i></div>
+          <h4>Problem Solver</h4>
+          <p>I break down complex problems into clean, manageable solutions.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-rocket"></i></div>
+          <h4>Fast Learner</h4>
+          <p>I adapt quickly to new technologies and pick up new skills fast.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-code"></i></div>
+          <h4>Clean Code</h4>
+          <p>I write readable, maintainable code that follows best practices.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-users"></i></div>
+          <h4>Team Player</h4>
+          <p>I collaborate effectively and communicate clearly with teams.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-                  <span class="text" data-aos="zoom-in" data-aos-duration="2500">
-                    View My Project
-                  </span>
+  <!-- ===== SKILLS ===== -->
+  <section class="skills-section" id="skills">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up" data-aos-duration="600">
+        <h2 class="section-title">Skills &amp; Technologies</h2>
+        <p class="section-subtitle">Tools I use to build and ship</p>
+      </div>
+      <div class="skills-grid" data-aos="fade-up" data-aos-duration="700">
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <div class="skill-card-icon"><i class="fab fa-html5"></i></div>
+            <h3 class="skill-card-title">Frontend</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-item-icon"><i class="fab fa-html5"></i></span>
+              <span class="skill-item-name">HTML5</span>
+              <div class="skill-bar"><div class="skill-bar-fill" style="width:92%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-item-icon"><i class="fab fa-css3-alt"></i></span>
+              <span class="skill-item-name">CSS3</span>
+              <div class="skill-bar"><div class="skill-bar-fill" style="width:88%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-item-icon"><i class="fab fa-js"></i></span>
+              <span class="skill-item-name">JavaScript (ES6+)</span>
+              <div class="skill-bar"><div class="skill-bar-fill" style="width:80%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-item-icon"><i class="fab fa-js"></i></span>
+              <span class="skill-item-name">TypeScript</span>
+              <div class="skill-bar"><div class="skill-bar-fill" style="width:60%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-item-icon"><i class="fab fa-bootstrap"></i></span>
+              <span class="skill-item-name">Bootstrap</span>
+              <div class="skill-bar"><div class="skill-bar-fill" style="width:88%"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <div class="skill-card-icon"><i class="fab fa-node-js"></i></div>
+            <h3 class="skill-card-title">Backend</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-item-icon"><i class="fab fa-node-js"></i></span>
+              <span class="skill-item-name">Node.js</span>
+              <div class="skill-bar"><div class="skill-bar-fill" style="width:78%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-item-icon"><i class="fab fa-node-js"></i></span>
+              <span class="skill-item-name">Express.js</span>
+              <div class="skill-bar"><div class="skill-bar-fill" style="width:78%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-item-icon"><i class="fas fa-plug"></i></span>
+              <span class="skill-item-name">REST APIs</span>
+              <div class="skill-bar"><div class="skill-bar-fill" style="width:82%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-item-icon"><i class="fas fa-lock"></i></span>
+              <span class="skill-item-name">JWT Authentication</span>
+              <div class="skill-bar"><div class="skill-bar-fill" style="width:70%"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <div class="skill-card-icon"><i class="fas fa-database"></i></div>
+            <h3 class="skill-card-title">Database</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-item-icon"><i class="fas fa-database"></i></span>
+              <span class="skill-item-name">MongoDB</span>
+              <div class="skill-bar"><div class="skill-bar-fill" style="width:75%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-item-icon"><i class="fas fa-leaf"></i></span>
+              <span class="skill-item-name">Mongoose</span>
+              <div class="skill-bar"><div class="skill-bar-fill" style="width:70%"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <div class="skill-card-icon"><i class="fas fa-code"></i></div>
+            <h3 class="skill-card-title">Languages</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-item-icon"><i class="fas fa-code"></i></span>
+              <span class="skill-item-name">C</span>
+              <div class="skill-bar"><div class="skill-bar-fill" style="width:65%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-item-icon"><i class="fas fa-code"></i></span>
+              <span class="skill-item-name">C++</span>
+              <div class="skill-bar"><div class="skill-bar-fill" style="width:55%"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <div class="skill-card-icon"><i class="fas fa-tools"></i></div>
+            <h3 class="skill-card-title">Tools</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-item-icon"><i class="fab fa-git-alt"></i></span>
+              <span class="skill-item-name">Git</span>
+              <div class="skill-bar"><div class="skill-bar-fill" style="width:82%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-item-icon"><i class="fab fa-github"></i></span>
+              <span class="skill-item-name">GitHub</span>
+              <div class="skill-bar"><div class="skill-bar-fill" style="width:82%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-item-icon"><i class="fas fa-flask"></i></span>
+              <span class="skill-item-name">Postman</span>
+              <div class="skill-bar"><div class="skill-bar-fill" style="width:72%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-item-icon"><i class="fas fa-code"></i></span>
+              <span class="skill-item-name">VS Code</span>
+              <div class="skill-bar"><div class="skill-bar-fill" style="width:88%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-item-icon"><i class="fas fa-database"></i></span>
+              <span class="skill-item-name">MongoDB Compass</span>
+              <div class="skill-bar"><div class="skill-bar-fill" style="width:65%"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <div class="skill-card-icon"><i class="fas fa-cogs"></i></div>
+            <h3 class="skill-card-title">Dev Workflow</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-item-icon"><i class="fas fa-mobile-alt"></i></span>
+              <span class="skill-item-name">Responsive Design</span>
+              <div class="skill-bar"><div class="skill-bar-fill" style="width:85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-item-icon"><i class="fas fa-sync-alt"></i></span>
+              <span class="skill-item-name">CRUD Operations</span>
+              <div class="skill-bar"><div class="skill-bar-fill" style="width:80%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-item-icon"><i class="fas fa-link"></i></span>
+              <span class="skill-item-name">API Integration</span>
+              <div class="skill-bar"><div class="skill-bar-fill" style="width:78%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-item-icon"><i class="fas fa-shield-alt"></i></span>
+              <span class="skill-item-name">Auth &amp; Authorization</span>
+              <div class="skill-bar"><div class="skill-bar-fill" style="width:70%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-item-icon"><i class="fas fa-layer-group"></i></span>
+              <span class="skill-item-name">MVC Architecture</span>
+              <div class="skill-bar"><div class="skill-bar-fill" style="width:72%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-                </button>
+  <!-- ===== SERVICES ===== -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up" data-aos-duration="600">
+        <h2 class="section-title">Services</h2>
+        <p class="section-subtitle">What I can help you with</p>
+      </div>
+      <div class="services-grid" data-aos="fade-up" data-aos-duration="700">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-palette"></i></div>
+          <h4>Frontend Development</h4>
+          <p>Responsive, accessible interfaces with HTML5, CSS3, JavaScript, TypeScript &amp; Bootstrap.</p>
+          <a href="#contact" class="btn-premium btn-premium-outline" style="font-size:0.78rem;padding:7px 18px;">Learn More</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-server"></i></div>
+          <h4>Backend Development</h4>
+          <p>Scalable server-side apps with Node.js, Express.js, MongoDB, and secure JWT authentication.</p>
+          <a href="#contact" class="btn-premium btn-premium-outline" style="font-size:0.78rem;padding:7px 18px;">Learn More</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-plug"></i></div>
+          <h4>REST API Development</h4>
+          <p>Design and build RESTful APIs with proper routing, middleware, validation, and documentation.</p>
+          <a href="#contact" class="btn-premium btn-premium-outline" style="font-size:0.78rem;padding:7px 18px;">Learn More</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-layer-group"></i></div>
+          <h4>Full Stack Development</h4>
+          <p>End-to-end web apps combining frontend UI with backend logic, databases, auth, and deployment.</p>
+          <a href="#contact" class="btn-premium btn-premium-outline" style="font-size:0.78rem;padding:7px 18px;">Learn More</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+          <h4>Responsive Websites</h4>
+          <p>Websites that look great on every device — desktop, tablet, and mobile — with clean adaptive layouts.</p>
+          <a href="#contact" class="btn-premium btn-premium-outline" style="font-size:0.78rem;padding:7px 18px;">Learn More</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-database"></i></div>
+          <h4>Database Design</h4>
+          <p>Structured MongoDB schemas with Mongoose, optimized queries, and efficient data modeling.</p>
+          <a href="#contact" class="btn-premium btn-premium-outline" style="font-size:0.78rem;padding:7px 18px;">Learn More</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-lock"></i></div>
+          <h4>Authentication System</h4>
+          <p>Secure login systems with JWT, password hashing, protected routes, and user session management.</p>
+          <a href="#contact" class="btn-premium btn-premium-outline" style="font-size:0.78rem;padding:7px 18px;">Learn More</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+          <h4>Website Deployment</h4>
+          <p>Deploy frontend and backend applications to platforms like Netlify, Vercel, and Render.</p>
+          <a href="#contact" class="btn-premium btn-premium-outline" style="font-size:0.78rem;padding:7px 18px;">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- ===== PROJECTS ===== -->
+  <section class="projects-section section-alt" id="projects">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up" data-aos-duration="600">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">Things I've built from the ground up</p>
+      </div>
+      <div class="projects-grid" data-aos="fade-up" data-aos-duration="700">
+        <!-- Project 1: E-Commerce -->
+        <div class="project-card" onclick="window.open('https://e-commerce-1p.netlify.app/','_blank')">
+          <div class="project-image">
+            <img src="img/p2.png" alt="E-Commerce Website" loading="lazy">
+            <div class="project-overlay"></div>
+            <span class="project-status">Live</span>
+          </div>
+          <div class="project-body">
+            <h4>E-Commerce Website</h4>
+            <div class="project-tags">
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">CSS</span>
+              <span class="project-tag">Bootstrap</span>
+              <span class="project-tag">JavaScript</span>
+            </div>
+            <p>Responsive e-commerce site with product listing, shopping cart, and interactive UI.</p>
+            <div class="project-actions">
+              <a href="https://e-commerce-1p.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn-premium btn-premium-primary" onclick="event.stopPropagation();">
+                <i class="fas fa-external-link-alt"></i> Live
               </a>
-
-              <div class="mt-4 text-center">
-
-                <a href="my-resume.pdf" download class="btn btn-success me-2">
-                  Download Resume
-                </a>
-
-                <a href="#contact" class="btn btn-warning">
-                  Hire Me
-                </a>
-
-              </div>
-
-
-
-
-
+              <a href="https://github.com/dharmik-rabari-03/Javascript/tree/main/E-Commerce" target="_blank" rel="noopener noreferrer" class="btn-premium btn-premium-outline" onclick="event.stopPropagation();">
+                <i class="fab fa-github"></i> Code
+              </a>
             </div>
           </div>
-          <div class="col-lg-6 col-md-12 col-sm-12  char2  text-center  mt-5 img" data-aos="fade-left"
-            data-aos-duration="2000">
-
-            <img src="img/2unnamed.jpg" alt="Rounded Image" class="img-fluid rounded-circle mt-5">
-
-
+        </div>
+        <!-- Project 2: Construction -->
+        <div class="project-card" onclick="window.open('https://brikly-construction.vercel.app/','_blank')">
+          <div class="project-image">
+            <img src="img/p1.png" alt="Construction Website" loading="lazy">
+            <div class="project-overlay"></div>
+            <span class="project-status">Live</span>
+          </div>
+          <div class="project-body">
+            <h4>Construction Website</h4>
+            <div class="project-tags">
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">CSS</span>
+              <span class="project-tag">Bootstrap</span>
+              <span class="project-tag">JavaScript</span>
+            </div>
+            <p>Business website for a construction company with service showcase and portfolio.</p>
+            <div class="project-actions">
+              <a href="https://brikly-construction.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-premium btn-premium-primary" onclick="event.stopPropagation();">
+                <i class="fas fa-external-link-alt"></i> Live
+              </a>
+              <a href="https://github.com/dharmik-rabari-03/brikly-construction" target="_blank" rel="noopener noreferrer" class="btn-premium btn-premium-outline" onclick="event.stopPropagation();">
+                <i class="fab fa-github"></i> Code
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 3: Optimatia -->
+        <div class="project-card" onclick="window.open('https://optimatia-project.vercel.app/','_blank')">
+          <div class="project-image" style="background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460);display:flex;align-items:center;justify-content:center;">
+            <img src="/img/p3.png" alt="">
+            <div class="project-overlay"></div>
+            <span class="project-status">New</span>
+          </div>
+          <div class="project-body">
+            <h4>Optimatia</h4>
+            <div class="project-tags">
+              <span class="project-tag">HTML5</span>
+              <span class="project-tag">CSS3</span>
+              <span class="project-tag">Bootstrap 5</span>
+              <span class="project-tag">Responsive</span>
+              <span class="project-tag">Modern UI</span>
+            </div>
+            <p>Modern, premium, fully responsive business website with clean UI/UX, Bootstrap grid system, reusable components, and cross-browser compatibility.</p>
+            <div class="project-actions">
+              <a href="https://optimatia-project.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-premium btn-premium-primary" onclick="event.stopPropagation();">
+                <i class="fas fa-external-link-alt"></i> Live
+              </a>
+              <a href="https://github.com/dharmik-rabari-03/optimatia-project" target="_blank" rel="noopener noreferrer" class="btn-premium btn-premium-outline" onclick="event.stopPropagation();">
+                <i class="fab fa-github"></i> Code
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 4: Nature Image Slider -->
+        <div class="project-card" onclick="window.open('https://slider-project-js03.netlify.app/','_blank')">
+          <div class="project-image" style="background:linear-gradient(135deg,#0b0f1a,#1a1a2e,#16213e);display:flex;align-items:center;justify-content:center;">
+            <img src="/img/p4.png" alt="">
+            <div class="project-overlay"></div>
+            <span class="project-status">Live</span>
+          </div>
+          <div class="project-body">
+            <h4>Nature Image Slider</h4>
+            <div class="project-tags">
+              <span class="project-tag">HTML5</span>
+              <span class="project-tag">CSS3</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">Responsive</span>
+            </div>
+            <p>Lightweight image slider built with Vanilla JavaScript. Auto-cycles through images with smooth transitions and manual Previous &amp; Next navigation.</p>
+            <div class="project-actions">
+              <a href="https://slider-project-js03.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn-premium btn-premium-primary" onclick="event.stopPropagation();">
+                <i class="fas fa-external-link-alt"></i> Live
+              </a>
+              <a href="https://github.com/dharmik-rabari-03/Javascript/tree/main/slider-project" target="_blank" rel="noopener noreferrer" class="btn-premium btn-premium-outline" onclick="event.stopPropagation();">
+                <i class="fab fa-github"></i> Code
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 5: Greenly Landscaping -->
+        <div class="project-card" onclick="window.open('https://greenly-project.netlify.app/','_blank')">
+          <div class="project-image" style="background:linear-gradient(135deg,#0a1f0e,#1a3a1a,#2d5a27);display:flex;align-items:center;justify-content:center;">
+            <img src="/img/p5.png" alt="">
+            <div class="project-overlay"></div>
+            <span class="project-status">Live</span>
+          </div>
+          <div class="project-body">
+            <h4>Greenly Landscaping</h4>
+            <div class="project-tags">
+              <span class="project-tag">HTML5</span>
+              <span class="project-tag">CSS3</span>
+              <span class="project-tag">Bootstrap 5</span>
+              <span class="project-tag">Responsive</span>
+            </div>
+            <p>Modern landscaping business website with service showcase, testimonials, image gallery, FAQ section, and professional business-oriented design.</p>
+            <div class="project-actions">
+              <a href="https://greenly-project.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn-premium btn-premium-primary" onclick="event.stopPropagation();">
+                <i class="fas fa-external-link-alt"></i> Live
+              </a>
+              <a href="https://github.com/dharmik-rabari-03/web-flow-compitition" target="_blank" rel="noopener noreferrer" class="btn-premium btn-premium-outline" onclick="event.stopPropagation();">
+                <i class="fab fa-github"></i> Code
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 6: Weather app -->
+        <div class="project-card" onclick="window.open('https://quiz-project0303.netlify.app/','_blank')">
+          <div class="project-image" style="background:linear-gradient(135deg,#1a1a3e,#2d1b69,#3a0ca3);display:flex;align-items:center;justify-content:center;">
+            <img src="/img/p6.png" alt="">
+            <div class="project-overlay"></div>
+            <span class="project-status">Live</span>
+          </div>
+          <div class="project-body">
+            <h4>Weather App</h4>
+            <div class="project-tags">
+              <span class="project-tag">HTML5</span>
+              <span class="project-tag">CSS3</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">Responsive</span>
+            </div>
+            <p>A responsive Weather Application that provides real-time weather information using the OpenWeather API. Users can search for any city to instantly view current weather conditions through a clean and modern interface.</p>
+            <div class="project-actions">
+              <a href="https://weather-api033.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn-premium btn-premium-primary" onclick="event.stopPropagation();">
+                <i class="fas fa-external-link-alt"></i> Live
+              </a>
+              <a href="https://github.com/dharmik-rabari-03/Javascript/tree/main/weather-API" target="_blank" rel="noopener noreferrer" class="btn-premium btn-premium-outline" onclick="event.stopPropagation();">
+                <i class="fab fa-github"></i> Code
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <svg class="wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path class="wave-path"
-          d="M0,160L60,176C120,192,240,224,360,213.3C480,203,600,149,720,149.3C840,149,960,203,1080,218.7C1200,235,1320,213,1380,202.7L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
-        </path>
-      </svg>
-    </section>
+    </div>
+  </section>
 
-    <section id="my-journey-section">
+  <!-- ===== ACHIEVEMENTS ===== -->
+  <section class="achievements-section" id="achievements">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up" data-aos-duration="600">
+        <h2 class="section-title">Achievements</h2>
+        <p class="section-subtitle">Milestones and recognitions</p>
+      </div>
+      <div class="achievements-grid" data-aos="fade-up" data-aos-duration="700">
+        <div class="achievement-card">
+          <div class="achievement-icon"><i class="fas fa-trophy"></i></div>
+          <h4>Hackathon Winner</h4>
+          <p>Won college-level hackathons building full-stack applications.</p>
+        </div>
+        <div class="achievement-card">
+          <div class="achievement-icon"><i class="fas fa-layer-group"></i></div>
+          <h4>7+ Projects</h4>
+          <p>Built and deployed multiple web applications from scratch.</p>
+        </div>
+        <div class="achievement-card">
+          <div class="achievement-icon"><i class="fab fa-github"></i></div>
+          <h4>GitHub Commits</h4>
+          <p>Active GitHub profile with consistent contributions.</p>
+        </div>
+        <div class="achievement-card">
+          <div class="achievement-icon"><i class="fas fa-graduation-cap"></i></div>
+          <h4>Continuous Learning</h4>
+          <p>Always exploring new tools, languages, and best practices.</p>
+        </div>
+        <div class="achievement-card">
+          <div class="achievement-icon"><i class="fas fa-user-graduate"></i></div>
+          <h4>BCA Student</h4>
+          <p>Pursuing Bachelor of Computer Applications degree.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- ===== CERTIFICATIONS ===== -->
+  <section class="certifications-section section-alt" id="certifications">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up" data-aos-duration="600">
+        <h2 class="section-title">Certifications</h2>
+        <p class="section-subtitle">Credentials that validate my skills</p>
+      </div>
+      <div class="cert-grid" data-aos="fade-up" data-aos-duration="700">
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fas fa-trophy"></i></div>
+          <h4>Tech War 2026 Hackathon Winner</h4>
+          <p>Winner of the Tech War 2026 Hackathon for developing an innovative software solution, demonstrating strong problem-solving, teamwork, and full-stack development skills.</p>
+          <span class="cert-badge" style="background:rgba(251,191,36,0.15);color:#fbbf24;">&#127942; Winner</span>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fas fa-laptop-code"></i></div>
+          <h4>Future Forward – Design &amp; Development</h4>
+          <p>Successfully completed the Future Forward Design &amp; Development program, gaining practical experience in modern web design, frontend development, UI/UX principles, and responsive website development.</p>
+          <span class="cert-badge" style="background:rgba(52,211,153,0.15);color:#34d399;">&#10004; Certified</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <div class="container " id="about">
-        <h2 class="h1 text-center mt-5 pt-5" data-aos="zoom-in-up" data-aos-duration="1000">My Journey</h2>
-        <hr class=" mx-auto mb-4 h-line" data-aos="zoom-in-up" data-aos-duration="1000">
-        <div class="row text-center justify-content-center mb-5 pb-5 man-work mt-5" data-aos="fade-down"
-          data-aos-duration="3000">
-          <div class="col-lg-6 col-md-12 col-sm-12">
-            <img src="img/man-working-laptop-from-office_1108340-892.jpg" alt="About Me" class="img-fluid  mb-4 mt-5"
-              width="500" height="500">
-          </div>
-          <div class="col-lg-6 col-md-12 col-sm-12 d-flex align-items-center text-start text-lg-start" id="my-journey">
+  <!-- ===== CONTACT ===== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up" data-aos-duration="600" style="margin-bottom:32px;">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Have a project? Let's talk about it</p>
+      </div>
+      <div class="contact-grid" data-aos="fade-up" data-aos-duration="700">
+        <div class="contact-info-card">
+          <h3>Let's build something together</h3>
+          <p>I'm always open to new opportunities, collaborations, and interesting projects. Feel free to reach out!</p>
+          <div class="contact-detail">
+            <div class="contact-detail-icon"><i class="fas fa-map-marker-alt"></i></div>
             <div>
-              <p>
-                Hello! I'm currently pursuing my <b>Bachelor of Computer Applications (BCA)</b> and along the way, I've
-                developed
-                a deep interest in <b>Full Stack Web Development</b>. What started as curiosity turned into passion when
-                I wrote
-                my first line of HTML code. Since then, I’ve been committed to building beautiful and functional
-                websites
-                and applications.
-              </p>
-
-              <p> To strengthen my skills, I joined a Full Stack Developer course, where I learned how to work with both
-                <b> front-end and back-end </b>technologies. I’ve worked with HTML, CSS, JavaScript, React.js for the
-                frontend,
-                and Node.js, Express.js, and MongoDB for the backend. This comprehensive learning experience has given
-                me
-                the confidence to tackle real-world projects.
-              </p>
-
-
-              <p> Throughout this journey, I’ve built several projects that reflect my learning and problem-solving
-                skills.
-                Each project has taught me something new — from designing responsive user interfaces to managing backend
-                APIs and working with databases.</p>
-
-
-
-              <b> Thank you for visiting my portfolio</b> — I hope it gives you a glimpse of my journey and potential!
-            </div>
-
-
-          </div>
-        </div>
-      </div>
-
-    </section>
-    <section>
-      <div class="container" id="service">
-        <h2 class="h1 text-center mt-5 pt-5" id="service" data-aos="zoom-in" data-aos-duration="1000">My Services</h2>
-        <hr class="mx-auto mb-4 h-line" data-aos="zoom-in" data-aos-duration="1000">
-        <div class="row mt-5" data-aos="zoom-out" data-aos-duration="1000">
-
-
-          <div class="col-lg-4 col-md-6 col-sm-12 mb-4 d-flex justify-content-center align-items-center ">
-
-            <div class="card" style="width: 25rem;height:30rem;">
-              <img src="img/frontend.jpg" class="img-fluid f1" alt="...">
-              <div class="card-body">
-                <h5 class="card-title mt-4">Frontend Development</h5>
-                <p class="card-text ">Building responsive and user-friendly interfaces using HTML, CSS, JavaScript, and
-                  React.js. </p>
-
-                <a href="#" class="btn btn-primary ">Contact for Frontend Project</a>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-sm-12 mb-4 d-flex justify-content-center align-items-center">
-
-            <div class="card" style="width: 25rem; height:30rem;">
-              <img src="img/backend_1.jpg" class="img-fluid f1" alt="...">
-              <div class="card-body ">
-                <h5 class="card-title mt-4">Backend Development</h5>
-                <p class="card-text ">Creating scalable backend systems and APIs with Node.js, Express.js, and databases
-                  like MongoDB and MySQL.</p>
-                <a href="#" class="btn btn-primary ">Contact for Backend Project</a>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-sm-12 mb-4 d-flex justify-content-center align-items-center">
-
-            <div class="card" style="width: 25rem;height:30rem;">
-              <img src="img/fullstack.jpg" class="img-fluid f1" alt="...">
-              <div class="card-body">
-                <h5 class="card-title mt-4">Full Stack Solutions</h5>
-                <p class="card-text ">Delivering complete web applications by combining frontend and backend expertise
-                  for
-                  seamless functionality.</p>
-                <a href="#" class="btn btn-primary ">Contact for Fullstack Solution </a>
-              </div>
-            </div>
-
-          </div>
-
-
-
-
-
-
-          <div class="col-lg-4 col-md-6 col-sm-12 mb-4 d-flex justify-content-center align-items-center">
-
-            <div class="card" style="width: 25rem;height:30rem;">
-              <img src="img/dev-ops.jpg" class="img-fluid f1" alt="...">
-              <div class="card-body">
-                <h5 class="card-title mt-4">DevOps & Deployment</h5>
-                <p class="card-text ">Automating workflows and deploying apps smoothly using Git, GitHub, Heroku, and
-                  Netlify.</p>
-
-                <a href="#" class="btn btn-primary ">Contact For DevOps Projects</a>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-sm-12 mb-4 d-flex justify-content-center align-items-center">
-
-            <div class="card" style="width: 25rem; height:30rem;">
-              <img src="img/e commerce.jpg" class="img-fluid f1" alt="...">
-              <div class="card-body ">
-                <h5 class="card-title mt-4">E-commerce Development</h5>
-                <p class="card-text ">Developing secure and user-friendly online stores with features like carts,
-                  payments, and authentication.</p>
-                <a href="#" class="btn btn-primary ">Contact for E-commerce Solutions</a>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-sm-12 mb-4 d-flex justify-content-center align-items-center">
-
-            <div class="card" style="width: 25rem;height:30rem;">
-              <img src="img/mobile.jpg" class="img-fluid f1" alt="...">
-              <div class="card-body">
-                <h5 class="card-title mt-4">Mobile App Development</h5>
-                <p class="card-text mt-4">Creating cross-platform mobile apps with React Native for Android and iOS
-                  devices.
-                </p>
-                <a href="#" class="btn btn-primary mt-2">Contact for Mobile Apps Projects</a>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-
-
-    </section>
-
-
-    <section id="skills">
-      <h1 class="text-center mt-5" data-aos="zoom-in" data-aos-duration="1000">Skills</h1>
-      <hr class=" mx-auto mb-4 h-line" data-aos="zoom-in" data-aos-duration="1000">
-      <div class="container">
-        <div class="row mt-5">
-
-          <div class="col-lg-4 mb-5" data-aos="flip-up" data-aos-duration="1000">
-            <ul class="list-group">
-              <li class="list-group-item active bg-dark" aria-current="true">Frontend Development</li>
-              <li class="list-group-item">HTML5, CSS3, JavaScript</li>
-              <li class="list-group-item">React.js, Next.js</li>
-              <li class="list-group-item">Bootstrap, Tailwind CSS</li>
-              <li class="list-group-item">Responsive & UI/UX Design</li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 mb-5" data-aos="flip-down" data-aos-duration="1000">
-
-            <ul class="list-group">
-              <li class="list-group-item active bg-dark" aria-current="true">Backend Development</li>
-              <li class="list-group-item">Node.js, Express.js</li>
-              <li class="list-group-item">MongoDB, Mongoose</li>
-              <li class="list-group-item">MySQL, PostgreSQL</li>
-              <li class="list-group-item">API Development (REST/GraphQL)</li>
-
-            </ul>
-          </div>
-          <div class="col-lg-4 mb-5" data-aos="flip-up" data-aos-duration="1000">
-
-            <ul class="list-group">
-              <li class="list-group-item active bg-dark" aria-current="true">Full Stack Development</li>
-              <li class="list-group-item">MERN Stack</li>
-              <li class="list-group-item">Authentication & Authorization</li>
-              <li class="list-group-item">State Management (Redux/Zustand)</li>
-              <li class="list-group-item">MVC Architecture</li>
-
-            </ul>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4 mb-5" data-aos="flip-down" data-aos-duration="1000">
-
-            <ul class="list-group">
-              <li class="list-group-item active bg-dark" aria-current="true">DevOps & Deployment</li>
-              <li class="list-group-item">Docker, GitHub Actions</li>
-              <li class="list-group-item">CI/CD Pipelines</li>
-              <li class="list-group-item">AWS, Vercel, Netlify, Heroku</li>
-              <li class="list-group-item">Version Control (Git & GitHub)</li>
-
-            </ul>
-          </div>
-          <div class="col-lg-4 mb-5" data-aos="flip-up" data-aos-duration="1000">
-
-            <ul class="list-group">
-              <li class="list-group-item active bg-dark" aria-current="true">Mobile App Development</li>
-              <li class="list-group-item">React Native</li>
-              <li class="list-group-item">Flutter (Beginner)</li>
-              <li class="list-group-item">Cross-Platform Development</li>
-              <li class="list-group-item">UI Components & Navigation
-              </li>
-
-            </ul>
-          </div>
-          <div class="col-lg-4 mb-5" data-aos="flip-down" data-aos-duration="1000">
-
-            <ul class="list-group" id="projects">
-              <li class="list-group-item active bg-dark" aria-current="true">Tools & Soft Skills</li>
-              <li class="list-group-item">VS Code, Postman, Figma</li>
-              <li class="list-group-item">Agile & Scrum</li>
-              <li class="list-group-item">Problem Solving & Debugging</li>
-              <li class="list-group-item">Team Collaboration & Communication</li>
-
-            </ul>
-          </div>
-        </div>
-      </div>
-
-
-    </section>
-
-    <section>
-      <!-- Section Title -->
-      <h1 class="text-center mt-5" data-aos="zoom-in" data-aos-duration="1000">
-        My Project
-      </h1>
-
-      <hr class="mx-auto mb-4 h-line" data-aos="zoom-in" data-aos-duration="1000">
-
-      <div class="container">
-        <div class="row" data-aos="flip-up" data-aos-duration="1000">
-
-          <!-- ====== Card Carousel 1 ====== -->
-          <div class="col-12 col-md-4 mb-4">
-            <div id="carouselExampleInterval1" class="carousel slide h-100" data-bs-ride="carousel">
-              <div class="carousel-inner h-100">
-
-                <!-- Slide 1 -->
-                <div class="carousel-item active h-100" data-bs-interval="2000">
-                  <div class="card h-100 d-flex flex-column">
-                    <!-- Construction Website Image -->
-                    <img src="img/p1.png" class="card-img-top" alt="Construction Website">
-
-                    <div class="card-body flex-grow-1">
-                      <h5 class="card-title">Construction Website</h5>
-
-                      <p class="card-text">
-                        A modern construction company website built using HTML,
-                        CSS, Bootstrap, and JavaScript with responsive design,
-                        service sections, animations, and clean UI.
-                      </p>
-                    </div>
-
-                    <div class="card-footer bg-transparent border-0">
-                      <a href="https://brikly-construction.vercel.app/" target="_blank" class="btn btn-primary w-100">
-                        View Project
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Slide 2 -->
-                <div class="carousel-item h-100" data-bs-interval="2000">
-                  <div class="card h-100 d-flex flex-column">
-
-                    <!-- E-Commerce Website Image -->
-                    <img src="img/p2.png" class="card-img-top" alt="E-Commerce Website">
-
-                    <div class="card-body flex-grow-1">
-                      <h5 class="card-title">E-Commerce Website</h5>
-
-                      <p class="card-text">
-                        A responsive e-commerce website developed using HTML,
-                        CSS, JavaScript, and Bootstrap featuring product sections,
-                        shopping UI, and modern design.
-                      </p>
-                    </div>
-
-                    <div class="card-footer bg-transparent border-0">
-                      <a href="https://e-commerce-1p.netlify.app/" class="btn btn-primary w-100">
-                        View Project
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Slide 3 -->
-                <div class="carousel-item h-100" data-bs-interval="2000">
-                  <div class="card h-100 d-flex flex-column">
-
-                    <!-- Buildify Website Image -->
-                    <img src="img/p3.png" class="card-img-top" alt="Buildify AI Website">
-
-                    <div class="card-body flex-grow-1">
-                      <h5 class="card-title">Buildify AI Website</h5>
-
-                      <p class="card-text">
-                        A premium AI startup landing page inspired by modern SaaS
-                        websites with gradient background, responsive layout,
-                        and clean user interface.
-                      </p>
-                    </div>
-
-                    <div class="card-footer bg-transparent border-0">
-                      <a href="https://buildify-website-ten.vercel.app/" class="btn btn-primary w-100">
-                        View Project
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
+              <h5>Location</h5>
+              <p>Krushnnagar Sihor, Bhavnagar, Gujarat 364240</p>
             </div>
           </div>
-
-          <!-- ====== Card Carousel 2 ====== -->
-          <div class="col-12 col-md-4 mb-4">
-            <div id="carouselExampleInterval2" class="carousel slide h-100" data-bs-ride="carousel">
-              <div class="carousel-inner h-100">
-
-                <!-- Slide 1 -->
-                <div class="carousel-item active h-100" data-bs-interval="2000">
-                  <div class="card h-100 d-flex flex-column">
-
-                    <img src="img/p2.png" class="card-img-top" alt="E-Commerce Website">
-
-                    <div class="card-body flex-grow-1">
-                      <h5 class="card-title">E-Commerce Website</h5>
-
-                      <p class="card-text">
-                        A responsive e-commerce website developed using HTML,
-                        CSS, JavaScript, and Bootstrap featuring product sections,
-                        shopping UI, and modern design.
-                      </p>
-                    </div>
-
-                    <div class="card-footer bg-transparent border-0">
-                      <a href="https://e-commerce-1p.netlify.app/" class="btn btn-primary w-100">
-                        View Project
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Slide 2 -->
-                <div class="carousel-item h-100" data-bs-interval="2000">
-                  <div class="card h-100 d-flex flex-column">
-
-                    <img src="img/p3.png" class="card-img-top" alt="Buildify AI Website">
-
-                    <div class="card-body flex-grow-1">
-                      <h5 class="card-title">Buildify AI Website</h5>
-
-                      <p class="card-text">
-                        A premium AI startup landing page inspired by modern SaaS
-                        websites with gradient background, responsive layout,
-                        and clean user interface.
-                      </p>
-                    </div>
-
-                    <div class="card-footer bg-transparent border-0">
-                      <a href="https://buildify-website-ten.vercel.app/" class="btn btn-primary w-100">
-                        View Project
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Slide 3 -->
-                <div class="carousel-item h-100" data-bs-interval="2000">
-                  <div class="card h-100 d-flex flex-column">
-
-                    <img src="img/p1.png" class="card-img-top" alt="Construction Website">
-
-                    <div class="card-body flex-grow-1">
-                      <h5 class="card-title">Construction Website</h5>
-
-                      <p class="card-text">
-                        A modern construction company website built using HTML,
-                        CSS, Bootstrap, and JavaScript with responsive design,
-                        service sections, animations, and clean UI.
-                      </p>
-                    </div>
-
-                    <div class="card-footer bg-transparent border-0">
-                      <a href="https://brikly-construction.vercel.app/" target="_blank" class="btn btn-primary w-100">
-                        View Project
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-
-          <!-- ====== Card Carousel 3 ====== -->
-          <div class="col-12 col-md-4 mb-4">
-            <div id="carouselExampleInterval3" class="carousel slide h-100" data-bs-ride="carousel">
-              <div class="carousel-inner h-100">
-
-                <!-- Slide 1 -->
-                <div class="carousel-item active h-100" data-bs-interval="2000">
-                  <div class="card h-100 d-flex flex-column">
-
-                    <img src="img/p3.png" class="card-img-top" alt="Buildify AI Website">
-
-                    <div class="card-body flex-grow-1">
-                      <h5 class="card-title">Buildify AI Website</h5>
-
-                      <p class="card-text">
-                        A premium AI startup landing page inspired by modern SaaS
-                        websites with gradient background, responsive layout,
-                        and clean user interface.
-                      </p>
-                    </div>
-
-                    <div class="card-footer bg-transparent border-0">
-                      <a href="https://buildify-website-ten.vercel.app/" class="btn btn-primary w-100">
-                        View Project
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Slide 2 -->
-                <div class="carousel-item h-100" data-bs-interval="2000">
-                  <div class="card h-100 d-flex flex-column">
-
-                    <img src="img/p1.png" class="card-img-top" alt="Construction Website">
-
-                    <div class="card-body flex-grow-1">
-                      <h5 class="card-title">Construction Website</h5>
-
-                      <p class="card-text">
-                        A modern construction company website built using HTML,
-                        CSS, Bootstrap, and JavaScript with responsive design,
-                        service sections, animations, and clean UI.
-                      </p>
-                    </div>
-
-                    <div class="card-footer bg-transparent border-0">
-                      <a href="https://brikly-construction.vercel.app/" target="_blank" class="btn btn-primary w-100">
-                        View Project
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Slide 3 -->
-                <div class="carousel-item h-100" data-bs-interval="2000">
-                  <div class="card h-100 d-flex flex-column">
-
-                    <img src="img/p2.png" class="card-img-top" alt="E-Commerce Website">
-
-                    <div class="card-body flex-grow-1">
-                      <h5 class="card-title">E-Commerce Website</h5>
-
-                      <p class="card-text">
-                        A responsive e-commerce website developed using HTML,
-                        CSS, JavaScript, and Bootstrap featuring product sections,
-                        shopping UI, and modern design.
-                      </p>
-                    </div>
-
-                    <div class="card-footer bg-transparent border-0">
-                      <a href="https://e-commerce-1p.netlify.app/" class="btn btn-primary w-100">
-                        View Project
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-
-
-
-  </main>
-
-
-
-  <footer>
-    <section id="contact" class="mt-5 ">
-
-
-      <p class="h1 text-center " data-aos="zoom-in" data-aos-duration="1000"> Contact</p>
-      <hr class="mx-auto  h-line">
-
-      <div class="container-fluid cf-1 pb-4" style="padding-left: 0;padding-right: 0;">
-
-        <svg class="wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path class="wave-path" fill="#0099ff" fill-opacity="1"
-            d="M0,96L48,96C96,96,192,96,288,101.3C384,107,480,117,576,112C672,107,768,85,864,80C960,75,1056,85,1152,96C1248,107,1344,117,1392,122.7L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
-          </path>
-        </svg>
-        <!-- <svg class="wave-svg" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 1440 320">
-      <path class="wave-path" fill-opacity="1" d="M0,64L40,80C80,96,160,128,240,133.3C320,139,400,117,480,128C560,139,640,181,720,165.3C800,149,880,75,960,74.7C1040,75,1120,149,1200,160C1280,171,1360,117,1400,90.7L1440,64L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
-    </svg> -->
-
-        <div class=" container">
-
-          <div class="row ">
-            <div class="col-lg-4" data-aos="fade-right" data-aos-duration="2000">
-              <form id="contact-form">
-
-                <div class="mt-3">
-
-                  <label for="name" class="form-label">
-                    Name
-                  </label>
-
-                  <input type="text" id="name" placeholder="enter your name" class="form-control" required>
-
-                </div>
-
-                <div class="mt-3">
-
-                  <label for="email" class="form-label">
-                    Email
-                  </label>
-
-                  <input type="email" id="email" placeholder="enter your email" class="form-control" required>
-
-                </div>
-
-                <div class="mt-3">
-
-                  <label for="message" class="form-label">
-                    Message
-                  </label>
-
-                  <textarea id="message" class="form-control" required placeholder="Enter your message"
-                    rows="5"></textarea>
-
-                </div>
-
-                <button class="btn btn-primary mt-3">
-                  Submit
-                </button>
-
-              </form>
-            </div>
-            <div class="col-lg-4 mt-5 mr-5" data-aos="fade-left" data-aos-duration="2000">
-
-              <h5>Address</h5>
-
-              <p>krushnnagar sihor<br>
-                Bhavnagar, Gujarat 364240
-              </p>
-
-              <h5>Phone</h5>
-              <p><a href="tel:+91 9624908290" class="text-decoration-none text-white">+91 7573068252</a></p>
-
+          <div class="contact-detail">
+            <div class="contact-detail-icon"><i class="fas fa-envelope"></i></div>
+            <div>
               <h5>Email</h5>
-              <p><a href="mailto:dharmik161616@gmail.com" class="text-decoration-none ">dharmik161616@gmail.com</a>
-              </p>
-
-
-
-            </div>
-            <div class="col-lg-4">
-              <h5 class="mt-5 mb-3 ms-5">Follow Us</h5>
-
-              <!-- From Uiverse.io by Praashoo7 -->
-              <div class="main">
-                <div class="up">
-                  <button class="card1">
-                    <a href="https://www.instagram.com/dharmik_rabari_03/" target="_blank">
-                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        viewBox="0,0,256,256" width="30px" height="30px" fill-rule="nonzero" class="instagram">
-                        <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-                          stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                          font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                          style="mix-blend-mode: normal">
-                          <g transform="scale(8,8)">
-                            <path
-                              d="M11.46875,5c-3.55078,0 -6.46875,2.91406 -6.46875,6.46875v9.0625c0,3.55078 2.91406,6.46875 6.46875,6.46875h9.0625c3.55078,0 6.46875,-2.91406 6.46875,-6.46875v-9.0625c0,-3.55078 -2.91406,-6.46875 -6.46875,-6.46875zM11.46875,7h9.0625c2.47266,0 4.46875,1.99609 4.46875,4.46875v9.0625c0,2.47266 -1.99609,4.46875 -4.46875,4.46875h-9.0625c-2.47266,0 -4.46875,-1.99609 -4.46875,-4.46875v-9.0625c0,-2.47266 1.99609,-4.46875 4.46875,-4.46875zM21.90625,9.1875c-0.50391,0 -0.90625,0.40234 -0.90625,0.90625c0,0.50391 0.40234,0.90625 0.90625,0.90625c0.50391,0 0.90625,-0.40234 0.90625,-0.90625c0,-0.50391 -0.40234,-0.90625 -0.90625,-0.90625zM16,10c-3.30078,0 -6,2.69922 -6,6c0,3.30078 2.69922,6 6,6c3.30078,0 6,-2.69922 6,-6c0,-3.30078 -2.69922,-6 -6,-6zM16,12c2.22266,0 4,1.77734 4,4c0,2.22266 -1.77734,4 -4,4c-2.22266,0 -4,-1.77734 -4,-4c0,-2.22266 1.77734,-4 4,-4z">
-                            </path>
-                          </g>
-                        </g>
-                      </svg>
-                    </a>
-
-                  </button>
-                  <button class="card2">
-                    <a href="https://www.linkedin.com/in/dharmik-rabari-82070a382/" target="_blank">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" class="mt-4 linkedin"
-                        viewBox="0 0 24 24" fill="#0A66C2">
-                        <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 
-           0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11.75 
-           20h-3v-11h3v11zm-1.5-12.268c-.966 
-           0-1.75-.784-1.75-1.75s.784-1.75 
-           1.75-1.75 1.75.784 
-           1.75 1.75-.784 1.75-1.75 
-           1.75zm13.25 
-           12.268h-3v-5.604c0-3.368-4-3.112-4 
-           0v5.604h-3v-11h3v1.528c1.396-2.586 
-           7-2.777 7 2.476v6.996z" />
-                      </svg>
-
-                    </a>
-                  </button>
-                </div>
-                <div class="down">
-                  <button class="card3">
-                    <a href="https://github.com/dharmik-rabari-03" target="_blank">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30px" height="30px"
-                        class="github">
-                        <path
-                          d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z">
-                        </path>
-                      </svg>
-                    </a>
-                  </button>
-                  <button class="card4">
-                    <a href="https://wa.me/917573068252" target="_blank">
-                      <img src="img/whatsapp-svgrepo-com.svg" alt="" width="35px " height="35px"
-                        class="me-2 mb-2 whatsapp">
-                    </a>
-                  </button>
-                </div>
-              </div>
+              <a href="mailto:dharmik161616@gmail.com">dharmik161616@gmail.com</a>
             </div>
           </div>
-
-
+          <div class="contact-detail">
+            <div class="contact-detail-icon"><i class="fas fa-phone-alt"></i></div>
+            <div>
+              <h5>Phone</h5>
+              <a href="tel:+917573068252">+91 7573068252</a>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <h5>Availability</h5>
+              <p>Open to freelance &amp; full-time opportunities</p>
+            </div>
+          </div>
+          <div class="contact-social">
+            <a href="https://github.com/dharmik-rabari-03" target="_blank" class="contact-social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/dharmik-ragiya/" target="_blank" class="contact-social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/dharmik_rabari_03/" target="_blank" class="contact-social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/917573068252" target="_blank" class="contact-social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="contact-form-card">
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" placeholder="john@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="submit-btn" id="submitBtn">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
         </div>
       </div>
+    </div>
+  </section>
 
-    </section>
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="navbar-brand" href="#home" style="display:block;">Dharmik<span>.</span></a>
+          <p>A passionate Full Stack Web Developer focused on building scalable, performant web applications with modern technologies.</p>
+        </div>
+        <div>
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Services</h5>
+          <ul class="footer-links">
+            <li><a href="#services">Frontend</a></li>
+            <li><a href="#services">Backend</a></li>
+            <li><a href="#services">Full Stack</a></li>
+            <li><a href="#services">API Dev</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Connect</h5>
+          <div class="footer-social">
+            <a href="https://github.com/dharmik-rabari-03" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/dharmik-ragiya/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/dharmik_rabari_03/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/917573068252" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Dharmik Ragiya. Built with passion.</p>
+        <a href="#home" class="back-to-top" aria-label="Back to top">
+          <i class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
   </footer>
-
-
-
-
-
-
-
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
-
-
-
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
-
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-
-
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
   <script src="script.js"></script>
 
 </body>
-
 </html>
