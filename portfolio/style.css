@@ -387,8 +387,8 @@ img { max-width: 100%; height: auto; }
 
 .hero-image-wrapper {
   position: relative;
-  width: 340px;
-  height: 340px;
+  width: 385px;
+  height: 385px;
   border-radius: 50%;
   padding: 4px;
   background: conic-gradient(from 0deg, #6366f1, #8b5cf6, #06b6d4, #6366f1);
@@ -473,7 +473,8 @@ img { max-width: 100%; height: auto; }
 .stat-card:hover {
   background: rgba(99,102,241,0.05);
   border-color: rgba(99,102,241,0.2);
-  transform: translateY(-4px);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(99,102,241,0.15);
 }
 
 .stat-value {
@@ -558,7 +559,8 @@ img { max-width: 100%; height: auto; }
 .feature-card:hover {
   background: rgba(99,102,241,0.05);
   border-color: rgba(99,102,241,0.2);
-  transform: translateY(-4px);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(99,102,241,0.15);
 }
 
 .feature-icon {
@@ -602,7 +604,8 @@ img { max-width: 100%; height: auto; }
 .skill-card:hover {
   border-color: rgba(99,102,241,0.2);
   background: rgba(99,102,241,0.03);
-  transform: translateY(-2px);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(99,102,241,0.15);
 }
 
 .skill-card-header {
@@ -712,7 +715,8 @@ img { max-width: 100%; height: auto; }
 .service-card:hover {
   border-color: rgba(99,102,241,0.2);
   background: rgba(99,102,241,0.03);
-  transform: translateY(-4px);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(99,102,241,0.15);
 }
 
 .service-icon {
@@ -776,8 +780,8 @@ img { max-width: 100%; height: auto; }
 
 .project-card:hover {
   border-color: rgba(99,102,241,0.2);
-  transform: translateY(-4px);
-  box-shadow: 0 8px 32px rgba(99,102,241,0.1);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(99,102,241,0.15);
 }
 
 .project-image {
@@ -924,7 +928,8 @@ img { max-width: 100%; height: auto; }
 .achievement-card:hover {
   background: rgba(99,102,241,0.05);
   border-color: rgba(99,102,241,0.2);
-  transform: translateY(-4px);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(99,102,241,0.15);
 }
 
 .achievement-icon {
@@ -953,8 +958,10 @@ img { max-width: 100%; height: auto; }
 
 .cert-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 16px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .cert-card {
@@ -970,7 +977,8 @@ img { max-width: 100%; height: auto; }
 
 .cert-card:hover {
   border-color: rgba(99,102,241,0.2);
-  transform: translateY(-4px);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(99,102,241,0.15);
 }
 
 .cert-icon {
@@ -1000,7 +1008,34 @@ img { max-width: 100%; height: auto; }
   font-weight: 500;
   padding: 2px 10px;
   border-radius: 6px;
-  margin-top: 10px;
+}
+
+.cert-verify-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 18px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.cert-verify-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(99,102,241,0.4);
+  color: #fff;
+}
+
+.cert-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 14px;
 }
 
 /* ===== CONTACT ===== */
@@ -1304,7 +1339,7 @@ img { max-width: 100%; height: auto; }
   .hero-description { max-width: 100%; margin-left: auto; margin-right: auto; }
   .hero-buttons { justify-content: center; }
   .hero-social { justify-content: center; }
-  .hero-image-wrapper { width: 260px; height: 260px; }
+  .hero-image-wrapper { width: 295px; height: 295px; }
   .hero-name { font-size: 2.5rem; }
   .floating-icon { display: none; }
 
@@ -1326,7 +1361,7 @@ img { max-width: 100%; height: auto; }
 
 @media (max-width: 768px) {
   .hero-name { font-size: 2rem; }
-  .hero-image-wrapper { width: 220px; height: 220px; }
+  .hero-image-wrapper { width: 250px; height: 250px; }
   .hero-greeting { font-size: 0.8rem; }
   .hero-role, .hero-role-text { font-size: 0.9rem; }
   .hero-description { font-size: 0.85rem; }
@@ -1353,7 +1388,7 @@ img { max-width: 100%; height: auto; }
 
 @media (max-width: 576px) {
   .hero-name { font-size: 1.7rem; }
-  .hero-image-wrapper { width: 190px; height: 190px; }
+  .hero-image-wrapper { width: 215px; height: 215px; }
   .hero-buttons { flex-direction: column; align-items: center; }
   .hero-buttons .btn-premium { width: 100%; justify-content: center; max-width: 260px; }
 
@@ -1369,6 +1404,6 @@ img { max-width: 100%; height: auto; }
 }
 
 @media (max-width: 400px) {
-  .hero-image-wrapper { width: 160px; height: 160px; }
+  .hero-image-wrapper { width: 180px; height: 180px; }
   .hero-name { font-size: 1.4rem; }
 }

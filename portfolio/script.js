@@ -82,11 +82,8 @@ window.addEventListener("scroll", () => {
 // ===== TYPED TEXT ROTATION =====
 const typedEl = document.getElementById("typed-text");
 const roles = [
-  "Full Stack Applications",
-  "Scalable APIs",
-  "Responsive Interfaces",
-  "Clean Architecture",
-  "End-to-End Solutions"
+  "MERN Stack Developer",
+  "Full Stack Developer"
 ];
 let roleIndex = 0;
 let charIndex = 0;
